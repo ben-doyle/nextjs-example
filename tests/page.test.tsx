@@ -1,7 +1,7 @@
 import React from 'react';
 import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
-import Page from '../app/page';
+import Page from '../src/app/page';
 
 describe('Page', () => {
   it('should render the h1', () => {
