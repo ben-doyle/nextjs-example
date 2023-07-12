@@ -1,8 +1,12 @@
 import { describe } from '@jest/globals';
-import { frog } from '../src/app/utils';
+import turtle, { frog } from '../src/app/utils';
 
 describe('utils', () => {
-  it('should return true if the value is a string', () => {
+  it('turtle', () => {
+    expect(turtle()).toBe('turtle');
+  });
+
+  it('frog', () => {
     expect(frog()).toBe('frog');
   });
 });
