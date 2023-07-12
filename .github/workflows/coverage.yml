@@ -14,6 +14,8 @@ jobs:
         uses: volta-cli/action@v4
       - name: Install dependencies
         run: yarn install --frozen-lockfile --immutable
+      - name: Run tests and collect coverage
+        run: yarn test
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
